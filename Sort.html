@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort</title>
+</head>
+<body>
+<h1> Sort() Method</h1>
+
+<a href="http://www.egtry.com/javascript/array/sort" > Best Link for Sort Example</a>
+     <br><br>
+
+    By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+    This works well for strings ("Apple" comes before "Banana"). However, if numbers are sorted as strings,
+    "25" is bigger than "100", because "2" is bigger than "1".
+    Because of this, the sort() method will produce an incorrect result when sorting numbers.
+    You can fix this by providing a "compare function"
+<h3> function(a, b){return a-b}.. <br>
+    a and b are two of the values in the array, that you compare so Javascript can sort them.
+
+    The function is called lots of times to determine where each element in the array is compared to all the others.
+    The exact number of times the function is called depends on the number of elements in the array and their original order.
+
+    You need to return 0 if the two elements are equal, a negative number if a should be before b and a positive number
+    if b should be before a.
+
+</h3>
+<p>
+    Click on Button below to sort array in ascending order
+</p>
+<button id="btn"> Sort </button>
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+
+<script src="sort.js"></script>
+
+</body>
+</html>
