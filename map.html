@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+</head>
+<body>
+
+<div id="original"></div>
+<div id="new"></div>
+<div id="new1"></div>
+
+
+
+<script>
+    var numbers = [10,20,50,30,20];
+    var i=0;
+    var double = numbers.map(function(item,index,array){
+        //console.log('item is: '+item+'index is: '+index+'arra input is: '+array);
+        return item*2;
+    });
+    /*var newarary=[];
+    for(i=0;i<numbers.length;i++){
+        newarary.push(numbers[i]*2);
+    }*/
+    document.getElementById('original').innerHTML="Original Array :"+numbers;
+    document.getElementById('new').innerHTML="New Array After map:"+double;
+   // document.getElementById('new1').innerHTML="New Array After loop:"+newarary;
+    console.log("array is: "+numbers);
+    console.log("double is :"+ double);
+  //  console.log("new array is :"+ newarary);
+
+
+</script>
+
+</body>
+</html>
